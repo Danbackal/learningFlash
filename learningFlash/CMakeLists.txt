@@ -46,7 +46,9 @@ pico_enable_stdio_usb(learningFlash 1)
 
 # Add the standard library to the build
 target_link_libraries(learningFlash
-        pico_stdlib)
+        pico_stdlib
+        hardware_flash
+        hardware_sync)
 
 # Add the standard include files to the build
 target_include_directories(learningFlash PRIVATE
